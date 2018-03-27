@@ -1,0 +1,52 @@
+Integration of card : commit the changes after reviewing
+
+email body:alignment of body content 
+dateformat -validate with rami changes in test2
+active button color:white
+
+onclick of proceed in calndar form send two extra paramters for display proper date form
+
+Close button:
+
+1.place the button close icon properly with top and left attribute
+2. openDialog() {
+    this.dialog.open(MyDialogComponent, { disableClose: true });
+  }
+
+Pop center:
+margin:auto 0px for popdiv
+
+email form:
+
+button:check for display:block;
+twice setup out of office issue needs tocheck :
+
+on submit add count value 2 append it to id and name
+
+email body:alignment of body content 
+dateformat -validate with rami changes in test2
+active button color:white
+---------------------------------------------------------------
+current date highlight:
+.mydrp .markcurrday, .mydrp .markcurrmonth, .mydrp .markcurryear {
+    border-radius: 8px;
+    padding: 5px;
+    border: 1px solid orange; // change orange color
+}
+
+.caltable, .mydrp .monthtable, .mydrp .yeartable, .mydrp .weekdaytitle, .mydrp .daycell, .mydrp .monthcell, .mydrp .yearcell {
+    border-collapse: collapse;
+    color: #003366;
+    line-height: 2.1; //increase the lineheight tomake the slected day prominent
+}
+
+.selecteddayend{
+    background-image: url('/assets/image/square-12.jpg') ;
+}
+
+.selecteddaybegin{
+    background-image: url('/assets/image/beginday.png') ;
+}
+
+.nextMonth{
+display:none}
