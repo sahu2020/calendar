@@ -50,3 +50,36 @@ current date highlight:
 
 .nextMonth{
 display:none}
+
+
+<!DOCTYPE html>
+<html>
+<body>
+  <script type = "text/javascript">
+        function DisplayMultiLineAlert() {
+            var newLine = "\r\n"
+            var message = "ASPSnippets offers free ASP.Net"
+            message += newLine;
+            message += "Code Snippets, Tutorials, Articles,";
+            message += newLine;
+            message += "Technical Stuff, Tips, Solutions";
+            message += newLine;
+            message += "and much more.";
+             message += newLine;
+              message += newLine;
+              message += "Warm Regards";
+                message += newLine;
+              message += "Sahana";
+              
+            
+            document.getElementById('textarea').innerHTML=message;
+            alert(message);
+        }
+    </script>
+    <input type = "button" value = "Show Message" onclick = "DisplayMultiLineAlert()" />
+<textarea id="textarea" rows="4" cols="50">
+At w3schools.com you will learn how to make a website. We offer free tutorials in all web development technologies.
+</textarea>
+
+</body>
+</html>
