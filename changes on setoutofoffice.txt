@@ -1,3 +1,71 @@
+
+checkbox :https://jsfiddle.net/kt3wbsog/74/
+
+<div class="wrapper">
+  <label class="c-checkbox">
+    <input type="checkbox">
+    <div class="c-checkbox__img"></div>
+    <span>Adult content</span>
+  </label>
+</div>
+.wrapper{
+	text-align: center;
+	padding: 50px;
+}
+// ***********************
+// Custom checkbox
+// ***********************
+.c-checkbox {
+  padding-left: 20px;
+  position: relative;
+  cursor: pointer;
+  input[type=checkbox] {
+    position: absolute;
+    opacity: 0;
+    overflow: hidden;
+    clip: rect(0 0 0 0);
+    height: 15px;
+    width: 15px;
+    padding: 0;
+    border: 0;
+    left: 0;
+  }
+  .c-checkbox__img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: inline;
+    width: 15px;
+    height: 15px;
+    border: 1px solid #333;
+    border-radius: 3px;
+    background-color: transparent;
+    background-image: none;
+    color: #000;
+    cursor: pointer;
+  }
+  input[type=checkbox]:checked + .c-checkbox__img {
+    background-position: 0 0;
+    &:before {
+      position: absolute;
+      top: 3px;
+      left: 2px;
+      width: 9px;
+      height: 5px;
+      border: 2px solid #000;
+      border-top: none;
+      border-right: none;
+      background: transparent;
+      content: '';
+      opacity: 1;
+      transform: rotate(-45deg);
+    }
+  }
+  span {
+    vertical-align: top;
+  }
+}
+
 Integration of card : commit the changes after reviewing
 
 email body:alignment of body content 
