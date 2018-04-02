@@ -1,3 +1,5 @@
+
+http://whoknew.dk/programmatically-opening-a-new-tab-window-on-mobile-safari-55.htm
 <!DOCTYPE html>
 <html lang="en">
 <head>
